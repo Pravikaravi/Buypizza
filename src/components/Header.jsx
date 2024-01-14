@@ -105,7 +105,7 @@ function Header() {
                   
                   className='w-40 bg-gray-50 shadow-xl rounded-lg flex flex-col absolute top-12 right-0'>
 
-                  {user && user.email === "uthayakumardilakshan@gmail.com" && (
+                  {user && user.email === "iampravika@gmail.com" && (
 
                       <Link to = {"/createItem"}>
 
