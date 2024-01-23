@@ -4,8 +4,12 @@ import { Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { CreateContainer, MainContainer } from "./components";
 
+import AddNewCategory from "./components/AddNewCategory";
+import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
+    
     <AnimatePresence mode='wait'>
 
         <div className="w-screen h-auto flex flex-col">
@@ -15,6 +19,7 @@ function App() {
             <Routes>
               <Route path="/*" element={<MainContainer/>}/>
               <Route path="/createItem" element={<CreateContainer/>}/>
+              <Route path="/AddNewCategory" element={<AddNewCategory />} />
             </Routes>
           </main>
       </div>
@@ -22,4 +27,6 @@ function App() {
    </AnimatePresence>
   );
 }
+
+
 export default App;
